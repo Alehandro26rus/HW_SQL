@@ -292,7 +292,7 @@ ORDER BY m.id;
 --______________________________________________________________________________________________________________________________________
 
 -- Создание таблицы users_old, аналогичной таблице users
-CREATE TABLE users_old AS SELECT * FROM users WHERE 1=0;
+CREATE TABLE users_old AS SELECT * FROM users;
 
 -- Создание процедуры для перемещения пользователя из таблицы users в таблицу users_old
 DELIMITER //
